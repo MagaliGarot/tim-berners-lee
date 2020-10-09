@@ -171,10 +171,50 @@ button {
 
 /*responsive*/
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     /*general*/
     .container1 {
-        max-width: 250px;
+        max-width: 500px;
+
+    }
+
+    .container2 {
+        max-width: 500px;
+        
+    }
+
+    .container3 {
+        max-width: 500px;
+    }
+
+    /*grid*/
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .movie1{
+        width:50%;
+    }
+    
+    .movie2{
+        width:50%;
+    }
+    
+    .movie3{
+        width:50%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    /*general*/
+    .container1 {
+        width: 250px;
 
     }
 
@@ -189,38 +229,24 @@ button {
 
     /*grid*/
 
-    grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:'title'
-                            'movie1'
-                            'space' 
-                            'movie2'
-                            'monsieur'
-                            'movie3'
-                            'alien' 
-                            ; 
-        grid-column-gap: 25px;
-        grid-row-gap: 40px;
-        margin: 0px 20px 20px 20px;
-      
+    .grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
-    .movie1{
-        grid-area: movie1;
-        width:180%;
-        margin: 3vw 3vw;
+    img.movie1{
+        width:60%;
     }
     
     .movie2{
-        grid-area: movie2;
-        width:180%;
+        width:60%;
     }
     
     .movie3{
-        grid-area: movie3;
-        width:180%;
+        width:60%;
     }
 
 }
