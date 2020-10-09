@@ -5,22 +5,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-ul li{
-    padding: 0px 100px 0px 100px;
-    margin: 3px auto 3px auto;
-    font-size: 40px;
-
-    list-style-type: none;
-    padding: 0;
-    overflow: auto;
-
-    text-align: center;
-    padding: 20px 5px; 
-    text-decoration: none;
-    
-
-    }
-
 /*text*/
 
 h1{
@@ -30,6 +14,7 @@ h1{
 }
 
 h2 {
+    font-size:30px;
     text-align: center;
     font-family: arial;
     color: #908783;
@@ -43,8 +28,8 @@ p{
     margin: 0px auto 0px auto;
     }
 
-    strong {
-        color:#7d7d7d;
+strong {
+    color:#7d7d7d;
     }
 
 
@@ -52,7 +37,7 @@ p{
 
 .container1 {
     width: 100%;
-    max-width: 650px;
+    max-width: 800px;
     margin: 50px auto 30px auto;
     padding: 30px 30px 30px 30px;
     border-radius: 10px;
@@ -61,22 +46,37 @@ p{
 
 
 .container2 {
+        /*general*/
     width: 100%;
-    max-width: 650px;
+    max-width: 800px;
     background-color:white;
-    margin: 20px auto 20px auto;
+    margin: 50px auto 30px auto;
     padding: 30px 30px 30px 30px;
-    border-radius: 10px;
+    border-radius:10px;
     color: #abadb0;
     font-family: 'Open Sans', sans-serif;
-    text-align: justify;
     background-color:white;
+    font-size: 40px;
+        /*flex*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+   /*a -> container2*/
+.container2 a {
+    padding: 60px 20px;
+    font-size: 35px;
+    color:#d0d0d0;
 }
 
 
 .container3 {
     width: 100%;
-    max-width: 650px;
+    max-width: 800px;
     background-color:white;
     margin: 20px auto 20px auto;
     padding: 30px 30px 30px 30px;
@@ -85,6 +85,58 @@ p{
     font-family: 'Open Sans', sans-serif;
     background-color:white;
 }
+
+/*grid fot film*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    grid-template-areas:'title title'
+                        'movie1 space' 
+                        'movie2 monsieur'
+                        'movie3 alien' 
+                        ; 
+    grid-column-gap: 25px;
+    grid-row-gap: 40px;
+    margin: 0px 20px 20px 20px;
+  
+}
+
+    /*img in grid*/
+.movie1{
+    grid-area: movie1;
+    width:82%;
+}
+
+.movie2{
+    grid-area: movie2;
+    width:82%;
+}
+
+.movie3{
+    grid-area: movie3;
+    width:82%;
+}
+
+    /*text in grid*/
+
+    .title {
+        grid-area: title;
+    }
+
+    .space{
+
+        grid-area: space;
+    }
+
+    .monsieur{
+        grid-area: monsieur;
+    }
+
+    .alien{
+        grid-area: alien;
+    }
 
 
 /*img*/
@@ -111,7 +163,7 @@ button {
     background-color:#dd5555;
     border:none;
     border-radius: 6px;
-    padding: 10px 20px 10px 20px;
+    padding: 17px 30px;
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
 }
@@ -120,7 +172,7 @@ button {
 /*responsive*/
 
 @media screen and (max-width: 650px) {
-
+    /*general*/
     .container1 {
         max-width: 250px;
 
@@ -134,4 +186,41 @@ button {
     .container3 {
         max-width: 250px;
     }
+
+    /*grid*/
+
+    grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:'title'
+                            'movie1'
+                            'space' 
+                            'movie2'
+                            'monsieur'
+                            'movie3'
+                            'alien' 
+                            ; 
+        grid-column-gap: 25px;
+        grid-row-gap: 40px;
+        margin: 0px 20px 20px 20px;
+      
+    }
+
+    .movie1{
+        grid-area: movie1;
+        width:180%;
+        margin: 3vw 3vw;
+    }
+    
+    .movie2{
+        grid-area: movie2;
+        width:180%;
+    }
+    
+    .movie3{
+        grid-area: movie3;
+        width:180%;
+    }
+
 }
