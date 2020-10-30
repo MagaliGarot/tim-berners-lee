@@ -23,10 +23,6 @@ https://github.com/MagaliGarot/LIE-Hamilton-4.25/blob/master/01-main-course/01-t
 * index.html
 * style.css
 
-## A venir
-
-Améliorations à venir.
-
 ## A propos :
 
 Je m'appele Magali et je suis actuellement en formation à BeCode Liège, je me forme avec comme objectif de décrocher un stage, puis un emploi dans le web développement. 
