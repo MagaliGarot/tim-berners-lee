@@ -8,6 +8,7 @@ https://magaligarot.github.io/tim-berners-lee/.
 
 Reproduction d'une page en HTML et CSS d'après un wireframe détaillé pendant la formation BeCode de Liège.
 <br/>
+<br/>
 ![wireframe ](https://raw.githubusercontent.com/MagaliGarot/LIE-Hamilton-4.25/master/01-main-course/01-the-field/04-html-css/01-fundamentals/images/goal-css.png?token=ARB5DNDLEO7AG5CTNWTIE3S7UV6ZO)
 
 ## Lien vers l'exercice
